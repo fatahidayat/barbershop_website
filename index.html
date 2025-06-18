@@ -45,7 +45,6 @@
 
     <!-- Jumbotron -->
     <section>
-      <!-- ... tetap seperti punyamu ... -->
       <div class="slideshow-container">
         <div class="slider-wrapper">
           <div class="mySlides">
@@ -228,13 +227,11 @@
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        //ketika tombol submit di klik
-        //tampilkan tombol loading hilangkan tombol kirim
+
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            //tampilkan kirim loading hilangkan tombol loading
             btnLoading.classList.toggle("d-none");
             btnKirim.classList.toggle("d-none");
             //tampilkan alert

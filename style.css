@@ -76,7 +76,6 @@ section {
   left: 0;
 }
 
-/* Dot styles tetap sama */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -98,13 +97,13 @@ section {
   background-color: #000;
 }
 
-/* Responsif untuk HP: buat kotak */
+/* Responsif untuk HP: buat 1:1 */
 @media screen and (max-width: 600px) {
   .slideshow-container {
-    aspect-ratio: 1 / 1; /* bikin kontainer jadi kotak */
+    aspect-ratio: 1 / 1; 
   }
 
   .mySlides img {
-    object-fit: cover; /* biar gambar tetap isi kotak dengan bagus */
+    object-fit: cover; 
   }
 }
