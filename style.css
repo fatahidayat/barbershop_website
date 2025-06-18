@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+
+.jumbotron {
+  background-color: #000000;
+}
+#lifestyle {
+  background-color: #ffffff;
+}
+section {
+  padding-top: 1rem;
+}
+.Junior {
+  padding-top: 10px;
+}
+.kartu {
+  padding-top: 15px;
+}
+
+.headone {
+  padding-bottom: 20px;
+}
+.boxprofil {
+  background-color: black;
+}
+
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  
+  transition: transform 0.5s ease-in-out;
+}
+
+.mySlides {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.mySlides img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+}
+
+/* Dot styles tetap sama */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
